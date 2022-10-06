@@ -1,20 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Header from './components/Header';
+import Description from './components/Description'
+import GitHub from './components/GitHub';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Helllo World</Text>
+    <View>
+      <Header />
+      <Description/>
+      <GitHub />
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
